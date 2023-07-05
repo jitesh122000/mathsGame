@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>Division Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--css-->
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+
+    <body>
+        <div id="container">
+            <!-- title-->
+            <h1 id="div" class="gametitle" style="display: block;" >Division Game</h1>
+            <!-- <h1 id="div" class="gametitle" style="display: block;">Division Game</h1>
+            <h1 id="add " class="gametitle" style="display: block;">Addition Game</h1>
+            <h1 id="sub" class="gametitle" style="display: block;">Subtraction Game</h1> -->
+            
+            <!--game board-->
+            <a id="back" href="index.html"  >Back</a>
+            <div id="board">            
+                <div id="right">Right</div>
+                <div id="wrong">Try again</div>
+                <div id="score">Score: <span id="scoreNumber">0</span></div>
+                <div id="problem"></div> 
+                <div id="instruction"></div>
+                <div id="answers">
+                    <div id="answer1"></div>
+                    <div id="answer2"></div>
+                    <div id="answer3"></div>
+                    <div id="answer4"></div>     
+                </div>
+                <div id="start">Start player 1 Game</div>
+
+                <div id="time">Time: <span id="remainingTime">55</span> sec</div>
+                <div id="gameover">GAME OVER Your score: <span id="finalscore">0</span></div>            
+            </div> 
+
+            <!--audio files-->
+            <div class="player">      
+                <audio id="startgame">
+                    <source src="game-start.mp3">
+                    <!-- <source src="audio/start.ogg"> -->
+                </audio>
+            </div>
+            <audio id="lost">
+                <source src="wrong.mp3">
+                <!-- <source src="audio/error.ogg"> -->
+            </audio>
+            <audio id="win">
+                <source src="correct.mp3">
+                <!-- <source src="audio/correct.ogg"> -->
+            </audio>
+            <audio id="final">
+                <source src="Game over.mp3">
+                <!-- <source src="audio/end.ogg"> -->
+            </audio>
+        </div>
+
+        <!--JavaScript-->
+        <script src="div.js"></script>
+
+    </body>
+</html>
